@@ -17,7 +17,7 @@ defmodule PhoenixPowerAssert.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {PhoenixPowerAssert, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext]]
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext, :power_assert]]
   end
 
   # Specifies which paths to compile per environment.
