@@ -13,12 +13,13 @@ defmodule PhoenixPowerAssert.ConnCase do
   of the test unless the test case is marked as async.
   """
 
-  use PowerAssert.CaseTemplate
+  use ExUnit.CaseTemplate
 
   using do
     quote do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
+      use PowerAssert
 
       import PhoenixPowerAssert.Router.Helpers
 

@@ -13,12 +13,13 @@ defmodule PhoenixPowerAssert.ChannelCase do
   of the test unless the test case is marked as async.
   """
 
-  use PowerAssert.CaseTemplate
+  use ExUnit.CaseTemplate
 
   using do
     quote do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
+      use PowerAssert
 
 
       # The default endpoint for testing
